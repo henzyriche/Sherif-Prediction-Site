@@ -223,7 +223,7 @@ nav li:first-child{
      font-size: 2rem! important;
     }
     .details h2{
-     font-size: 12px;
+     font-size: 10px;
     }
     .details .tickets-btn{
      top: 120%;
@@ -240,39 +240,10 @@ nav li:first-child{
      margin: 7px;
      font-size: 20px;
  }
- 
  }
 
-@media(max-width: 400px){
-    .container{
-        height: 400px;
-       }
-       .details{
-        top: 10%;
-        left: 5%;
-       }
-       .details h1{
-        font-size: 2rem! important;
-       }
-       .details h2{
-        font-size: 12px;
-       }
-       .details .tickets-btn{
-        top: 120%;
-        padding: 8px 10px;
-       }
-       .social-media {
-        top: 41%;
-        left: 3%;
-        width: 100%;
-        height: 40px;
-    }
-    
-    .social-media .bx{
-        margin: 7px;
-        font-size: 20px;
-    }
-}
+ 
+
 
  @media(max-width: 768px){
     .container{
@@ -306,36 +277,36 @@ nav li:first-child{
  
  }
 
- @media(max-width: 800px){
+ @media (max-width: 1080px){
     .container{
-     height: 400px;
+        height: 400px;
+       }
+       .details{
+        top: 10%;
+        left: 5%;
+       }
+       .details h1{
+        font-size: 2rem! important;
+       }
+       .details h2{
+        font-size: 10px;
+       }
+       .details .tickets-btn{
+        top: 120%;
+        padding: 8px 10px;
+       }
+       .social-media {
+        top: 41%;
+        left: 3%;
+        width: 100%;
+        height: 40px;
     }
-    .details{
-     top: 10%;
-     left: 5%;
+    
+    .social-media .bx{
+        margin: 7px;
+        font-size: 20px;
     }
-    .details h1{
-     font-size: 3rem;
-    }
-    .details h2{
-     font-size: 1rem;
-    }
-    .details .tickets-btn{
-     top: 110%;
-     padding: 8px 10px;
-    }
-    .social-media {
-     top: 47%;
-     left: 4%;
-     width: 100%;
-     height: 40px;
+    
  }
  
- .social-media .bx{
-     margin: 7px;
-     font-size: 20px;
- }
- 
- }
-
  
