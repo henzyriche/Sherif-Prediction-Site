@@ -51,11 +51,202 @@
     </div>
    </div>
 
-   <section class="advert">
-    <h2>1,2,3,4</h2>
-   </section>
 
 
+   <section class="predictions">
+    <div class="predictions-text">
+       <h2>TODAY'SFOOTBALL PREDICTIONS</h2>
+        <h2 id="livedate"></h2>
+    </div>
+    <table id="predictionsTable">
+        <tr>
+            <th onclick="sortTable(0)">Date</th>
+            <th onclick="sortTable(1)">League</th>
+            <th onclick="sortTable(2)">Match</th>
+            <th onclick="sortTable(3)">Predictions</th>
+            <th onclick="sortTable(4)">Results</th>
+        </tr>
+        <tr>
+            <td>2023-10-28</td>
+            <td>Premier League</td>
+            <td>Team A vs. Team B</td>
+            <td>Team A to Win</td>
+            <td>2-1</td>
+        </tr>
+        <tr>
+            <td>2023-10-29</td>
+            <td>La Liga</td>
+            <td>Team X vs. Team Y</td>
+            <td>Draw</td>
+            <td>0-0</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <tr>
+            <td>2023-10-30</td>
+            <td>Serie A</td>
+            <td>Team P vs. Team Q</td>
+            <td>Over 2.5 Goals</td>
+            <td>3-2</td>
+        </tr>
+        <!-- Add more rows with predictions and results -->
+    </table>
+
+    <script>
+        // JavaScript for table sorting
+        function sortTable(columnIndex) {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("predictionsTable");
+            switching = true;
+
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("td")[columnIndex];
+                    y = rows[i + 1].getElementsByTagName("td")[columnIndex];
+
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+</section>
+
+<script>
+
+    let time = document.getElementById("livedate");
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString();
+
+</script>
 
 
    <script>
