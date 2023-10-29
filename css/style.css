@@ -51,7 +51,7 @@ nav li:first-child{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 200px;
     width: 250px;
     z-index: 999;
     background-color: #f6f6f6;
