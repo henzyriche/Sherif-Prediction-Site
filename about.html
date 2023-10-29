@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"         content="Sherif">
+    <meta name="description"    content="Sports Prediction website">
+    <meta name="keywords"       content="prediction + website">
+    <title>Best predictions</title>
+
+    <!--Linking External CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Linking Box Icons-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!--Linking google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="vip.html">GET TICKETS</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">BEST PREDICTION</a></li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="vip.html">GET TICKETS</a></li>
+        <li  class="menu-button" onClick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+   </nav>
+
+   <section class="hero">
+    <div class="about-container">
+        <h1>ABOUT US</h1>
+       <p><a href="index.html">Home</a>/<a href="about.html">About Us</a></p> 
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about">
+    <div class="about1-container">
+        <h2>Welcome to Best Prediciton - Your Premier Sports Prediction Source!</h2>
+        <p>At Best Prediciton, we are passionate about sports and have a deep understanding of the excitement and uncertainty that comes with 
+            every game. We've created this platform to help sports enthusiasts and bettors make informed decisions, enhance their sports betting 
+            strategies, and elevate their overall experience.</p>
+            <br>
+        <div class="more-content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide you with the most accurate and reliable sports predictions available. We combine cutting-edge data analysis,
+                 expert insights, and advanced algorithms to deliver predictions that give you the winning edge. Whether you're a seasoned sports bettor
+                  or just looking for some fun, we have something for everyone.</p>
+        </div>
+        <button id="show-more-btn">Show More</button>
+    </div>
+</section>
+
+<section class="feedback-section">
+    <div class="feedback-card">
+        <p class="span"> <img src="./images/quotation mark.png" id="quotation-img"> </p>
+        <h3>@John Doe</h3>
+        <p>"I've been using this service for a year now, and my sports betting profits have skyrocketed. The predictions are spot on!"</p>
+    </div>
+
+    <div class="feedback-card">
+        <p class="span"> <img src="./images/quotation mark.png" id="quotation-img"> </p>
+        <h3>@Alice Smith</h3>
+        <p>"As a professional sports bettor, I rely on accurate predictions. This website has been a game-changer for me. Highly recommended!"</p>
+    </div>
+
+    <div class="feedback-card">
+        <p class="span"> <img src="./images/quotation mark.png" id="quotation-img"> </p>
+        <h3>@David Johnson</h3>
+        <p>"I was skeptical at first, but the results speak for themselves. I've seen a significant ROI thanks to the predictions here."</p>
+    </div>
+</section>
+
+<div class="advert">
+    <img src="./images/betway-ghana-250k.jpg" class="advert-img">
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="vip.html">Get Tickets</a></li>
+                    <li><a href="index.html">Predictions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONNECT WITH US</h3>
+                <ul class="social-icons">
+                    <li> <a href="#" class="icons"></a><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#" class="icons"></a><i class='bx bxl-twitter'></i></a></li> 
+                    <li><a href="#" class="icons"></a><i class='bx bxl-telegram'></i></a> </li>
+                    <li><a href="#"  class="icons"></a><i class="bx bxl-snapchat"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul class="footer-links">
+                    <li><a href="index1.html">Terms and Conditions</a></li>
+                    <li><a href="index2.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Sports Prediction. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const showMoreButton = document.getElementById('show-more-btn');
+    const moreContent = document.querySelector('.more-content');
+
+    showMoreButton.addEventListener('click', () => {
+        moreContent.style.display = 'block';
+        showMoreButton.style.display = 'none';
+    });
+</script>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+   </script>
+</body>
+</html>

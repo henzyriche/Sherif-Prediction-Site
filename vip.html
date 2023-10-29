@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"         content="Sherif">
+    <meta name="description"    content="Sports Prediction website">
+    <meta name="keywords"       content="prediction + website">
+    <title>Best predictions</title>
+
+    <!--Linking External CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Linking Box Icons-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!--Linking google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="vip.html">GET TICKETS</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">BEST PREDICTION</a></li>
+        <li class="hideOnMobile"><a href="index.html">HOME</a></li>
+        <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+        <li class="hideOnMobile"><a href="#">GET TICKETS</a></li>
+        <li  class="menu-button" onClick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+   </nav>
+
+   <section class="hero">
+    <div class="about-container">
+        <h1>GET VIP TICKETS</h1>
+       <p><a href="index.html">Home</a>/<a href="about.html">Get Tickets</a></p> 
+    </div>
+</section>
+
+
+<div class="vip-section">
+<div class="vip-card">
+    <h1 class="card-header">DAILY VIP TICKET</h1>
+    <div class="card-icon">
+        <i class="fas fa-trophy"></i>
+    </div>
+
+    <h3>Daily VIP Package</h3>
+    <p class="card-text">
+        Gain access to our exclusive sports betting predictions and tips for the day with our VIP Ticket.
+    </p>
+    <p>Premium Odds from the prediction Guru</p>
+    <p>Become a premium VIP member for: 1 day(s)</p>
+    <p>Recovery Tips Available</p>
+    <p>All VIP subscription are valid until slips are won</p>
+    <button class="purchase-button" id="purchaseButton">Purchase Now</button>
+</div>
+
+<script>
+    // JavaScript to handle the purchase button click event
+    document.getElementById("purchaseButton").addEventListener("click", function() {
+        // You can add your purchase logic here, e.g., open a purchase modal or redirect to a payment page
+        alert("Redirecting to the payment page for VIP Ticket purchase...");
+    });
+</script>
+</div>
+
+<div class="advert">
+    <img src="./images/betway-ghana-250k.jpg" class="advert-img">
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="vip.html">Get Tickets</a></li>
+                    <li><a href="index.html">Predictions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONNECT WITH US</h3>
+                <ul class="social-icons">
+                    <li> <a href="#" class="icons"></a><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href="#" class="icons"></a><i class='bx bxl-twitter'></i></a></li> 
+                    <li><a href="#" class="icons"></a><i class='bx bxl-telegram'></i></a> </li>
+                    <li><a href="#"  class="icons"></a><i class="bx bxl-snapchat"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>LEGAL</h3>
+                <ul class="footer-links">
+                    <li><a href="index1.html">Terms and Conditions</a></li>
+                    <li><a href="index2.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Sports Prediction. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+   </script>
+</body>
+</html>
